@@ -19,8 +19,16 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-minesweeper" class="anchor" href="#welcome-to-minesweeper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to minesweeper</h3>
+      <h1>
+<a id="minesweeper" class="anchor" href="#minesweeper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>minesweeper</h1>
+
+<p>This project is for minesweeper game. Firstly, I create a 9<em>9 field indicating the game field. 
+Secondly I set all the field with -1 indicating field that had not been clicked.
+Then I generates random number and set mines where number is 9. 
+Then calaulate number of mine around a coordinate being clicked and print.
+It calculates the number of mines and when the user click all the coordinate without mine, the user wins.
+If user click a blank field, it will enlarge the field with 3</em>3 field in center of blank coordinate. 
+you can compile with 'g++ -o sweep minesweeper.cpp' and then './sweep'</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/tracyqx/minesweeper">Minesweeper</a> is maintained by <a href="https://github.com/tracyqx">tracyqx</a>.</span>

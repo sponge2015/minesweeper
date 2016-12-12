@@ -1,6 +1,6 @@
 {
   "name": "Minesweeper",
   "tagline": "",
-  "body": "### Welcome to minesweeper",
+  "body": "# minesweeper \r\nThis project is for minesweeper game. Firstly, I create a 9*9 field indicating the game field. \r\nSecondly I set all the field with -1 indicating field that had not been clicked.\r\nThen I generates random number and set mines where number is 9. \r\nThen calaulate number of mine around a coordinate being clicked and print.\r\nIt calculates the number of mines and when the user click all the coordinate without mine, the user wins.\r\nIf user click a blank field, it will enlarge the field with 3*3 field in center of blank coordinate. \r\nyou can compile with 'g++ -o sweep minesweeper.cpp' and then './sweep'\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
