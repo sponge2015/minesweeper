@@ -13,6 +13,6 @@ Function print()is to show the layout
 Function check(), whose type is bool is to check if the user had click all the field without mines.
 I generate rand number with seed(time(0)) and lay mines in main() function.
 
-------------------------------------------------------------------------------------------------
 How to use it.
+------------------------------------------------------------------------------------------------
 you can compile with 'g++ -o sweep minesweeper.cpp' and then './sweep'
