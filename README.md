@@ -17,4 +17,4 @@ I generate rand number with seed(time(0)) and lay mines in main() function.
 ------------------------------------------------------------------------------------------------
 you can compile with 'g++ -o sweep minesweeper.cpp' and then './sweep'
 
-Then enter the cooridate you want to uncover until you click a mine.
+Then enter the cooridate you want to uncover until you click a mine. For example, you can enter '3 5', which means you want to uncover coodinate(3,5)
