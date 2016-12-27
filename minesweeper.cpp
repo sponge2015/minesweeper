@@ -25,7 +25,7 @@ void start (int x, int y) //if press a blank, extend the range
 		{
 			for(int j=y-1;j<=y+1;j++)
 			if ( x+derection[i] <= 9 && y+derection[j] <= 9 && x+derection[i] >= 1 && y+derection[j] >= 1
-     && !( derection[i] == 0 && derection[j] == 0 ) &&  map[x+derection[i]][y+derection[j]] == -1 ) 
+     && !( derection[i] == 0 && derection[j] == 0 ) && d[x+derection[i]][y+derection[j]] == -1 ) 
                       start( x+derection[i], y+derection[j] );
                       //start(i,j);
 		}
@@ -75,8 +75,8 @@ int main()
 	    while(n<10)
 	    {
 	        int counter=0;
-	        i=rand()%10;
-	        j=rand()%10;  
+	        i=rand()%9+1;
+	        j=rand()%9+1;  
 	        if (d[i][j]!=9)
 	        {
 	            d[i][j]=9;
