@@ -24,8 +24,10 @@ void start (int x, int y) //if press a blank, extend the range
 		for (int i=x-1;i<=x+1;i++)
 		{
 			for(int j=y-1;j<=y+1;j++)
-			if ( i<N&&i>=1&&j>=1&&j<N&&!((i==x&&j==y)&&d[i][j]==-1)) 
-                      start(i,j);
+			if ( x+derection[i] <= 9 && y+derection[j] <= 9 && x+derection[i] >= 1 && y+derection[j] >= 1
+     && !( derection[i] == 0 && derection[j] == 0 ) &&  map[x+derection[i]][y+derection[j]] == -1 ) 
+                      start( x+derection[i], y+derection[j] );
+                      //start(i,j);
 		}
 	}
 	else 
